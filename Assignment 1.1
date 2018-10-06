@@ -1,0 +1,20 @@
+1. Say True or False for the below statements:
+• Prescriptive Analytics used to predict the future outcomes?  
+Answer:FALSE
+• Base R packages installed automatically?  
+Answer:TRUE
+2. What is Recycling of elements in a vector?
+Answer:When applying an operation to two vectors that requires them to be the same length, R automatically recycles, 
+or repeats, elements of the shorter one, until it is long enough to match the longer Vector.
+3. Give an example of recycling of elements.
+Answer:Suppose we define two Vectors A and B as below
+A=c(1,2,4) 
+B=c(6,0,9,10,13) where A is shorter with only 3 elements. Now if we sum these two, we will get a warning message as follows.
+> A + B
+[1]  7  2 13 11 15
+Warning message:
+In A + B : longer object length is not a multiple of shorter object length
+Here R , Sum those Vectors by Recycling or repeating the elements in shorter one, until it is long enough to match the longer one 
+as below:
+> c(1,2,4,1,2) + c(6,0,9,10,13)
+[1]  7  2 13 11 15
